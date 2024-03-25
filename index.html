@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=43984043809&text=Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento">
+        <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+    </a>
+    <link rel="stylesheet" href="style.css">
+    <script src="menu.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+    <title>Marcelo Pinturas</title>
+</head>
+<body>
+    
+    <header>
+        <div class="container-header">
+            <div class="logo">
+                <a href="#topo">
+                    <img src="/imagens/logo-marcelo.png" alt="logo">
+                </a>
+            </div> <!--logo-->
+
+            <nav class="menu-destop">
+                <ul>
+                    <li><a href="#container-servicos">Nossos Serviços</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="https://api.whatsapp.com/send?phone=554384043809" target="_blank">
+                    <button>Contato</button>
+                </a>
+            </div>
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+            
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#container-servicos">Nossos Serviços</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#projetos">Projetos Realizados</a></li>
+                        <li><a href="#diferenciais">Nossos Diferenciais</a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=554384043809" target="_blank">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div> <!--topo-->
+    </header>
+
+    <main>
+        <section>
+            <div class="banner-image" id="topo">
+                <div class="container-banner">
+                    <h1>Marcelo Pinturas</h1>
+                    <span>Está em busca de serviços de pintura?</span>
+                    <a class="button" href="https://api.whatsapp.com/send?phone=554384043809">Faça um orçamento</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-servicos" id="container-servicos">
+            <h2 class="title-h2"> Nossos <span>Serviços</span></h2>
+                <div class="cards-servicos">
+    
+                    <div class="card-servicos">
+                        <img src="/imagens/imagem-pintura.jpg" alt="">
+                        <h3>Pintura comercial</h3>
+                    </div>
+                    <div class="card-servicos">
+                        <img src="/imagens/imagem-pintura.jpg" alt="">
+                        <h3>Pintura residencial</h3>
+                    </div>
+                    <div class="card-servicos">
+                        <img src="/imagens/imagem-pintura.jpg" alt="">
+                        <h3>Pintura em verniz</h3>
+                    </div>
+        
+                </div>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <h2 class="title-h2">Sobre <span>Nós</span></h2>
+            <div class="container-sobre">
+                <div class="img-sobre">
+                    <img src="/imagens/imagem-pintura.jpg" alt="">
+                </div>
+
+                <div class="content-sobre">
+                    <h3>Uma jornada baseada em qualidade e compromisso</h3>
+                    <p>Há mais de 15 anos, temos sido líderes em fornecer serviços de alta qualidade em pintura residencial, comercial e de edifícios em toda a região de Londrina.</p>
+                    <p>Como especialistas em pintura e reformas, oferecemos uma variedade de serviços para atender às necessidades individuais de cada cliente.</p>
+                    <p>Seja uma simples renovação em casa, uma atualização de escritório ou uma grande reforma de edifício, estamos prontos para assumir o desafio e superar suas expectativas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projetos" id="projetos">
+            <h2 class="title-h2">Projetos <span>realizados</span></h2>
+            <div class="img-proj">
+                <div class="wrapper">
+                    <i id="left" class="bi bi-chevron-left"></i>
+                    <div class="carrossel">
+                        <img src="/imagens/img1.jpeg" alt="" draggable="false">
+                        <img src="/imagens/img3.jpeg" alt="" draggable="false">
+                        <img src="/imagens/img4.jpeg" alt="" draggable="false">
+                        <img src="/imagens/img6.jpeg" alt="" draggable="false">
+                        <img src="/imagens/img7.jpeg" alt="" draggable="false">
+                        <img src="/imagens/img8.jpeg" alt="" draggable="false">
+                    </div>
+                    <i id="right" class="bi bi-chevron-right"></i>
+                </div>
+            </div>
+        </section>
+
+    
+        <section class="diferenciais" id="diferenciais">
+            <h2 class="title-h2">Nossos <span>diferenciais</span></h2>
+            <div class="container-diferenciais">
+                <div class="content-diferenciais">
+                    <h3></h3>
+                    <ul>
+                        <div class="lista-diferencial"><span><i class="bi bi-check"></i></span><li>Alta qualidade no serviço</li></div>
+                        <div class="lista-diferencial"><span><i class="bi bi-check"></i></span><li>Alta qualidade no serviço</li></div>
+                        <div class="lista-diferencial"><span><i class="bi bi-check"></i></span><li>Mais de 15 anos no mercado</li></div>
+                        <div class="lista-diferencial"><span><i class="bi bi-check"></i></span><li>Comprometimento com prazos</li></div>
+                    </ul>
+                </div>
+                <div class="img-diferenciais">
+                    <img src="/imagens/imagem-pintura.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="formulario">
+                <h2 class="title-h2">Fale <span>Conosco</span></h2>
+
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="text" name="name" id="" placeholder="Seu nome completo:" required>
+                    <input type="email" name="email" id="" placeholder="Seu E-mail:" required>
+                    <input type="tel" name="phone" id="" placeholder="Seu celular:" required>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Digite sua mensagem:" required></textarea>
+
+                    <div class="btn-enviar">
+                        <input type="submit" value="Enviar">
+                    </div>
+                    <input type="hidden" name="accessKey" value="0f0a0f44-0c9a-4b07-8ac2-e074c28bfcbb">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/contato.html">
+                </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="row">
+                <div class="colum-footer">
+                    <h4>Empresa x</h4>
+                    <p>Há mais de 15 anos, temos sido líderes em fornecer serviços de alta qualidade em toda a região de Londrina.</p>
+                </div>
+                <div class="colum-footer">
+                    <h4>Sobre nós</h4>
+                    <ul>
+                        <li><a href="#container-servicos">Nossos serviços</a></li>
+                        <li><a href="#sobre">Sobre nós</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#diferenciais">Nossos Diferenciais</a></li>
+                    </ul>
+                </div>
+                <div class="colum-footer colum-contact">
+                    <h4>Contato</h4>
+                    <a href="tel:+43984043809">(43) 98404-3809</a>
+                    <p>Londrina e Região</p>
+                </div>
+                <div class="colum-footer">
+                    <h4>Nossas redes sociais</h4>
+                    <div class="redes-sociais-footer">
+                        <a href="https://www.instagram.com/beca_codes?igshid=YzVkODRmOTdmMw==" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rebeca-kethelyn-lopes/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=554384043809" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

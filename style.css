@@ -1,0 +1,606 @@
+/* Geral*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+.logo{
+    width: 120px;
+    height: 120px;
+}
+
+.logo img{
+    max-width: 100%;
+    margin-top: 15px;
+}
+
+.btn-contato button{
+    color: white;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #039C36;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover{
+    background-color: #181818c2;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px rgba(214, 131, 237, 0.773);
+}
+
+.title-h2{
+    margin: 60px 0 40px 0;
+    text-align: center;
+    font-size: 40px;
+    color: #3276b1;
+    text-transform: uppercase;
+}
+
+/* Estilo do Header */
+
+.container-header{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header > .container-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .menu-destop a{
+    color: #3276b1;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+header .menu-destop a:hover{
+    color: rgba(0, 0, 0, 0.76);
+    transform: scale(1.05);
+    display: inline-block;
+    transition: .2s;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-destop ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+/* Estilo do Menu mobile */
+
+.btn-abrir-menu i{
+    color: #000000;
+    font-size: 35px;
+}
+
+.menu-mobile{
+    background-color: #dddbdb;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 75%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar i{
+    color: #000000;
+    font-size: 40px;
+    position: fixed;
+    z-index: 9999999;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+    margin-top: 60px;
+    display: block;
+}
+
+.menu-mobile nav ul li a{
+    padding: 20px 8%;
+    color: #3276b1;
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+}
+
+.btn-abrir-menu{
+    display: none;
+}
+
+.overlay-menu{
+    background-color: rgba(0, 0, 0, 0.611);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+}
+
+
+
+/*banner*/
+
+.banner-image {
+    position: relative;
+    background: url(/imagens/banner-principal.png) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    overflow: hidden;
+}
+
+.container-banner {
+    position: absolute;
+    padding: 8% 15%;
+    text-align: center;
+    color: #4e4e4e;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.container-banner h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+
+.container-banner span {
+    display: block;
+    font-size: 22px;
+
+}
+
+.button {
+    color: #313131;
+    padding: 10px 24px;
+    background: #039c36;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: .6s;
+    line-height: 90px;
+}
+
+.button:hover {
+    opacity: .6;
+}
+
+
+/*Serviços*/
+
+.cards-servicos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-servicos{
+    width: 400px;
+    overflow: hidden;
+    margin: 15px;
+}
+
+.card-servicos img{
+    width: 100%;
+    height: auto;
+}
+
+.card-servicos h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px;
+    color: #2a2a2a; 
+}
+
+
+/*Sobre*/
+.sobre .container-sobre {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #dddbdb;
+}
+
+.sobre .container-sobre .img-sobre{
+    flex: 1 1 45rem;
+}
+
+.sobre .container-sobre .img-sobre img{
+    width: 100%;
+}
+
+.sobre .container-sobre .content-sobre{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.sobre .container-sobre .content-sobre p{
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #2a2a2a; 
+}
+
+
+/* Projetos Realizados */
+
+.img-proj{
+    display: flex;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    max-width: 1200px;
+    position: relative;
+}
+
+.wrapper i{
+    top: 50%;
+    height: 46px;
+    width: 46px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    line-height: 46px;
+    background: rgb(216, 216, 216);
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.wrapper i:first-child{
+    left: -23px;
+    display: none;
+}
+
+.wrapper i:last-child{
+    right: -23px;
+}
+
+.wrapper .carrossel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carrossel .dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carrossel .dragging img{
+    pointer-events: none;
+}
+
+.carrossel img{
+    height: 340px;
+    object-fit: cover;
+    width: calc(100%  / 3);
+    margin-left: 14px;
+}
+
+.carrossel img:first-child{
+    margin-left: 0px;
+}
+
+
+
+/*Diferencial*/
+
+.diferenciais .container-diferenciais {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #dddbdb;
+}
+
+.diferenciais .container-diferenciais .img-diferenciais{
+    flex: 1 1 30rem;
+}
+
+.diferenciais .container-diferenciais .img-diferenciais img{
+    width: 100%;
+}
+
+.diferenciais .container-diferenciais .content-diferenciais{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.diferenciais .container-diferenciais .content-diferenciais h3{
+    margin-bottom: 40px;
+    font-size: 1.4rem;
+}
+
+.diferenciais .container-diferenciais .content-diferenciais .lista-diferencial{
+    display: flex;
+    justify-content: center;
+}
+
+.diferenciais .container-diferenciais .content-diferenciais ul li{
+    list-style-type: none;
+    font-size: 1.2rem;
+    line-height: 4rem;
+    color: #2a2a2a; 
+
+}
+
+.diferenciais .container-diferenciais .content-diferenciais i{
+    font-size: 2rem;
+    color: #039c36;
+    line-height: 4rem;
+}
+
+/*Estilo do formulario*/ 
+
+form{
+    max-width: 500px;
+    margin: 0 auto 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea{
+    width: 90%;
+    background-color: rgb(73, 136, 190);
+    border: none;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+input::placeholder, textarea::placeholder{
+    color: white;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: rgb(73, 136, 190);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-enviar input:hover{
+    background-color: rgb(101, 167, 225);
+    scale: (1.05);
+}
+
+
+/*Footer*/
+
+footer{
+    background-color: #dddbdb;
+    padding: 70px 0;
+    color: #2a2a2a; 
+
+}
+
+.container-footer{
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.colum-footer{
+    width: 22%;
+    padding: 0 15px;
+}
+
+.container-footer .colum-footer h4{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.colum-footer h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: rgb(0, 0, 0);
+    height: 1px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.container-footer .colum-footer ul li{
+    list-style: none;
+}
+
+.container-footer .colum-footer ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.colum-footer ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: capitalize;
+    display: block;
+    transition: all 0.3s ease;
+    color: #1e1e1e;
+}
+
+.colum-footer ul li a:hover{
+    color: rgb(182, 182, 182);
+    padding-left: 5px;
+}
+
+footer a:visited{
+    color: #2a2a2a;
+} 
+
+.colum-contact a, .colum-contact p{
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 27px;
+    line-height: 25px;
+}
+
+.redes-sociais-footer{
+    height: 40x;
+    margin: 40px 10px 10px 0;
+}
+
+.container-footer .colum-footer i{
+    background-color: rgb(45, 45, 46);
+    color: white;
+    font-size: 16px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 5px;
+    transition: all 0.5s ease;
+}
+
+.container-footer .colum-footer i:hover{
+    background-color: rgba(88, 88, 88, 0.61);
+}
+
+
+/*responsivo*/
+
+@media(max-width: 1060px){
+    .colum-footer{
+        width: 40%;
+        margin-bottom: 30px;
+    }
+
+    .row{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10%;
+    }
+}
+
+
+@media screen and (max-width: 1020px){
+    /* header */
+    .menu-destop, .btn-contato{
+        display: none;
+    }
+
+    .btn-abrir-menu{
+        display: block;
+    }
+
+
+    /* Serviços */
+
+    section.servicos{
+        padding: 80px 8%;
+    }
+
+    .card-servicos{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+
+    }
+
+    section.servicos .flex{
+        gap: 60px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .carrossel img{
+        width: calc(100% / 2);
+    }
+
+    form{
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    /*Carrossel*/
+    .carrossel img{
+        width: 100%
+    }
+
+    /*footer*/
+    .colum-footer{
+        width: 100%;
+        text-align: center;
+    }
+
+    .row{
+        margin: auto;
+    }
+
+    .colum-footer h4::before{
+        left: 50%;
+        width: 10px;
+    }
+    
+    .redes-sociais-footer{
+        margin-left: 10%;
+    }
+
+}
