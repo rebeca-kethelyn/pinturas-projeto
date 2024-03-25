@@ -162,7 +162,7 @@ header nav.menu-destop ul li{
 
 .banner-image {
     position: relative;
-    background: url(/imagens/banner-principal.png) no-repeat center;
+    background: url(imagens/banner-principal.png) no-repeat center;
     background-size: cover;
     height: 500px;
     overflow: hidden;
