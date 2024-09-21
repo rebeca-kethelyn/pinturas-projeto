@@ -25,7 +25,7 @@ const autoSlide = () => {
     let firstImgWidth = firstImg.clientWidth + 14;
     let valDifference = firstImgWidth - positionDiff;
 
-    if(carrossel.scrollLeft > prevScrolLeft){
+    if(carrossel.scrollLeft > prevScrollLeft){
         return carrossel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff; 
     } 
     carrossel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff; 
@@ -34,7 +34,7 @@ const autoSlide = () => {
 const dragStart = (e) => {
     isDragStart = true;
     prevPageX = e.pageX || e.touches[0].pageX;
-    prevScrolLeft = carrossel.scrollLeft;
+    prevScrollLeft = carrossel.scrollLeft;
 }
 
 const dragging= (e) => {
@@ -43,7 +43,7 @@ const dragging= (e) => {
     isDragging = true;
     carrossel.classList.add("dragging")
     positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
-    carrossel.scrollLeft = prevScrolLeft - positionDiff;
+    carrossel.scrollLeft = prevScrollLeft - positionDiff;
     showHideIcons();
 }
 
